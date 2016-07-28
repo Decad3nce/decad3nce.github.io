@@ -1,6 +1,7 @@
 # Site settings
 title: "Adnan Begovic Resume"
 description: "Adnan's CV"
+future: true
 
 # Build settings
 markdown: kramdown
