@@ -2,12 +2,27 @@
 layout: default
 overview:true
 ---
-Hey this works.
+Welcome.
+Bienvenido.
+Wilkommen.
+Dobrodošli.
 
-<section class="intro">
-  <div class="grid">
-    <div class="unit whole center-on-mobiles">
-      <a href="privacy_policy.html">Test</a>
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+    <body class="theme-{% if site.resume_theme %}{{ site.resume_theme }}{% endif %}">
+
+    <div class="wrapper" itemscope itemtype="http://schema.org/Person">
+      <header class="page-header">
+        <img src="images/avatar.jpg" alt="my photo" class="avatar" itemprop="image">
+      </header>
     </div>
-  </div>
-</section>
+
+    <div>
+       <ul>
+         <li><a href="resume.html">My CV</li>
+         <li><a href="privacy_policy.html">Privacy policy for my applications.</a></li>
+       </ul>
+    </div>
+    </body>
+</html>
